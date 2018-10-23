@@ -13,6 +13,8 @@ use RuntimeException;
 use stdClass;
 use ArrayObject;
 
+error_reporting(-1);
+
 class Foo
 {
     public $bar;
@@ -20,7 +22,7 @@ class Foo
     public function method(Bar $bar, Baz $baz){
         return [$bar, $baz];
     }
-    public function staticMethod(Bar $bar, Baz $baz){
+    public static function staticMethod(Bar $bar, Baz $baz){
         return [$baz, $bar];
     }
 
