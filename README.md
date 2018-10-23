@@ -1,4 +1,14 @@
 # simple-container
+
+[![Build Status](https://travis-ci.org/nishimura/simple-container.svg?branch=master)](https://travis-ci.org/nishimura/simple-container)
+[![Coverage Status](https://coveralls.io/repos/github/nishimura/simple-container/badge.svg?branch=master)](https://coveralls.io/github/nishimura/simple-container?branch=master)
+[![Code Climate](https://codeclimate.com/github/nishimura/simple-container/badges/gpa.svg)](https://codeclimate.com/github/nishimura/simple-container)
+
+
+[![Latest Stable Version](https://poser.pugx.org/nish/simple-container/v/stable)](https://packagist.org/packages/nish/simple-container)
+[![License](https://poser.pugx.org/nish/simple-container/license)](LICENSE)
+
+
 Simple container of auto wiring with constructor.
 
     <?php
