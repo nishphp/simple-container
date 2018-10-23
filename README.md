@@ -12,7 +12,7 @@
 Simple container of auto wiring with constructor.
 
     <?php
-    use Nish\Container;
+    use Nish\Container\Container;
 
     require_once 'vendor/autoload.php';
 
