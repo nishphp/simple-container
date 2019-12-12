@@ -82,7 +82,7 @@ class Container implements ContainerInterface
     {
         static $instance;
         if ($instance === null)
-            $instance = new self();
+            $instance = new static();
         return $instance;
     }
 
