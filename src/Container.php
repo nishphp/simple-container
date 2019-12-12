@@ -92,7 +92,7 @@ class Container implements ContainerInterface
      */
     public static function gets(string $id)
     {
-        return self::getInstance()->get($id);
+        return static::getInstance()->get($id);
     }
 
     // alias
@@ -101,7 +101,7 @@ class Container implements ContainerInterface
      */
     public static function mayget($id)
     {
-        $container = self::getInstance();
+        $container = static::getInstance();
         if ($container->has($id))
             return $container->get($id);
         else
