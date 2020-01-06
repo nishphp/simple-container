@@ -1,8 +1,8 @@
 # simple-container
 
-[![Build Status](https://travis-ci.org/nishimura/simple-container.svg?branch=master)](https://travis-ci.org/nishimura/simple-container)
-[![Coverage Status](https://coveralls.io/repos/github/nishimura/simple-container/badge.svg?branch=master)](https://coveralls.io/github/nishimura/simple-container?branch=master)
-[![Code Climate](https://codeclimate.com/github/nishimura/simple-container/badges/gpa.svg)](https://codeclimate.com/github/nishimura/simple-container)
+[![Build Status](https://travis-ci.org/nishphp/simple-container.svg?branch=master)](https://travis-ci.org/nishphp/simple-container)
+[![Coverage Status](https://coveralls.io/repos/github/nishphp/simple-container/badge.svg?branch=master)](https://coveralls.io/github/nishphp/simple-container?branch=master)
+[![Code Climate](https://codeclimate.com/github/nishphp/simple-container/badges/gpa.svg)](https://codeclimate.com/github/nishphp/simple-container)
 
 
 [![Latest Stable Version](https://poser.pugx.org/nish/simple-container/v/stable)](https://packagist.org/packages/nish/simple-container)
@@ -48,4 +48,4 @@ $db = $c->get(MyProject\\Db::class);
 ```
 
 
-@see https://github.com/nishimura/simple-container/blob/master/test/ContainerTest.php
+@see https://github.com/nishphp/simple-container/blob/master/test/ContainerTest.php
