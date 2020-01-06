@@ -2,7 +2,6 @@
     "name": "nish/simple-container",
     "description": "Simple Auto Wiring Container",
     "keywords": ["container"],
-    "homepage": "https://github.com/nishimura/simple-container",
     "license": "MIT",
     "authors": [{
         "name": "Satoshi Nishimura",
