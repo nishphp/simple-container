@@ -180,7 +180,17 @@ class Container implements ContainerInterface
         if ($this->has($key))
             return $this->get($key);
 
-        $refClass = $refParam->getClass();
+        $refClass = null;
+        $refType = $refParam->getType();
+        if ($refType instanceof \ReflectionNamedType && !$refType->isBuiltin()){
+            $class = $refType->getName();
+            if ($class){
+                // not use class_exists
+                // getClass maybe return interface
+                $refClass = new \ReflectionClass($refType->getName());
+            }
+        }
+
         if (!$refClass){
             if (!$refParam->isOptional())
                 throw new Exception('can not parse ' .

@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit colors="true" bootstrap="vendor/autoload.php">
+<phpunit colors="true" bootstrap="vendor/autoload.php"
+         displayDetailsOnTestsThatTriggerDeprecations="true"
+         >
     <testsuites>
         <testsuite name="Application Test Suite">
             <directory>test/</directory>
         </testsuite>
     </testsuites>
 
-    <filter>
-      <whitelist processUncoveredFilesFromWhitelist="true">
-        <directory suffix=".php">src/</directory>
-        <exclude>
-        </exclude>
-      </whitelist>
-    </filter>
 </phpunit>
 

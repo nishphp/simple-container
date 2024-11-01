@@ -47,7 +47,7 @@ class Baz {}
 
 final class ContainerTest extends TestCase
 {
-    public function tearDown()
+    public function tearDown(): void
     {
         Container::getInstance()->clear();
     }
@@ -148,9 +148,9 @@ final class ContainerTest extends TestCase
     public function testAutoWiringWithParameter()
     {
         $c = Container::getInstance();
-        $c->set('ArrayObject#__construct.input', ['foo' => 'bar']);
+        $c->set('ArrayObject#__construct.array', ['foo' => 'bar']);
         $c->set('ArrayObject#__construct.flags', 0);
-        $c->set('ArrayObject#__construct.iterator_class', 'ArrayIterator');
+        $c->set('ArrayObject#__construct.iteratorClass', 'ArrayIterator');
         $a = $c->get(ArrayObject::class);
         $this->assertEquals($a['foo'], 'bar');
     }
